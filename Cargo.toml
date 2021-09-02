@@ -1,0 +1,22 @@
+[package]
+name = "rust-facerecognition"
+version = "0.1.0"
+authors = ["prajadimas <dmspraja2105@gmail.com>"]
+edition = "2018"
+
+[[example]]
+name = "mtcnn"
+path = "tests/mtcnn.rs"
+
+[[example]]
+name = "haarcascade"
+path = "tests/haarcascade.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+opencv = "0.53"
+tensorflow = "0.12.0"
+image = "0.22"
+imageproc = "0.19"
+structopt = "0.2"
