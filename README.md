@@ -53,7 +53,11 @@ Read this [Prerequisites](https://github.com/tensorflow/rust#prerequisites):
 
 ## Tests
 
-Test face detection on [sample image](tests/img) using lists of Models
+Test face detection on [sample image](tests/img) using lists of Models, Running with:
+
+```console
+foo@bar:~$ cargo run --example <models> <input_file> <output_file>
+```
 
 - Using Haarcascade:
 
