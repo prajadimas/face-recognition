@@ -902,7 +902,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rust-facedetect"
+name = "rust-facerecognition"
 version = "0.1.0"
 dependencies = [
  "image",

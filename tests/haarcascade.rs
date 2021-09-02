@@ -4,7 +4,6 @@ use std::{error::Error, path::PathBuf};
 use opencv::{
 	core,
     imgcodecs,
-	imgproc,
 	objdetect,
 	prelude::*,
 	Result,
@@ -68,12 +67,12 @@ fn main() -> Result<(), Box<dyn Error>> {
         &mut gray,
         imgproc::COLOR_BGR2GRAY,
         0,
-    )?; */
+    )?;
 
     let mut reduced = Mat::default();
 
     imgproc::resize(
-        &input_image,
+        &gray,
         &mut reduced,
         core::Size {
             width: 0,
@@ -82,19 +81,19 @@ fn main() -> Result<(), Box<dyn Error>> {
         0.25f64,
         0.25f64,
         imgproc::INTER_LINEAR,
-    )?;
+    )?; */
 
     let mut faces = types::VectorOfRect::new();
 
     face.detect_multi_scale(
-        &reduced,
+        &input_image,
         &mut faces,
-        1.2,
-        2,
+        1.1,
+        3,
         objdetect::CASCADE_SCALE_IMAGE,
         core::Size {
-            width: 30,
-            height: 30,
+            width: 20,
+            height: 20,
         },
         core::Size {
             width: 0,
