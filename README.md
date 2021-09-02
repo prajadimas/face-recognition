@@ -69,6 +69,11 @@ foo@bar:~$ cargo run --example <models> <input_file> <output_file>
 ![Alt text](output/sample01_mtcnn.jpg?raw=true "Sample-01 MTCNN")
 ![Alt text](output/sample02_mtcnn.jpg?raw=true "Sample-02 MTCNN")
 
+- Using Seetaface:
+
+![Alt text](output/sample01_seetaface.jpg?raw=true "Sample-01 SeetaFace")
+![Alt text](output/sample02_seetaface.jpg?raw=true "Sample-02 SeetaFace")
+
 ## Benchmark
 
 On progress
